@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce Store</h1>
+        <div class="cart" onclick="viewCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+        
+    </header>
+
+    <nav class="banner">
+        <div class="category-container">
+            <div class="category">
+                <a href="men.html">
+                    <img src="images/banner-men.jpg" alt="Men's Wear">
+                    <h3>Men's Wear</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="women.html">
+                    <img src="images/banner-women.jpg" alt="Women's Wear">
+                    <h3>Women's Wear</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="kids.html">
+                    <img src="images/banner-kids.jpg" alt="Kids' Wear">
+                    <h3>Kids' Wear</h3>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <main>
+        <!-- Men's Wear Section -->
+        <section id="mens">
+            <h2>Men's Wear</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/mens1.jpg" alt="Men's T-Shirt">
+                    <h3>Men's T-Shirt</h3>
+                    <p>₹1,600</p>
+                    <button onclick="addToCart('Men\'s T-Shirt', 1600)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/mens2.jpg" alt="Men's Jacket">
+                    <h3>Men's Jacket</h3>
+                    <p>₹4,000</p>
+                    <button onclick="addToCart('Men\'s Jacket', 4000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/mens3.jpg" alt="Men's Jeans">
+                    <h3>Men's Jeans</h3>
+                    <p>₹3,000</p>
+                    <button onclick="addToCart('Men\'s Jeans', 3000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                   
+                    <img src="images/mens4.jpg" alt="Men's Shirt" >
+                    <h3>Men's Shirt</h3>
+                    <p>₹4,000</p>
+                    <button onclick="addToCart('Men\'s Shirt', 4000)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Women's Wear Section -->
+        <section id="womens">
+            <h2>Women's Wear</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/women1.jpg" alt="Women's Dress">
+                    <h3>Women's Dress</h3>
+                    <p>₹2,400</p>
+                    <button onclick="addToCart('Women\'s Dress', 2400)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/women2.jpg" alt="Women's Top">
+                    <h3>Women's Top</h3>
+                    <p>₹2,000</p>
+                    <button onclick="addToCart('Women\'s Top', 2000)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids' Wear Section -->
+        <section id="kids">
+            <h2>Kids' Wear</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/kids1.jpg" alt="Kids' Shirt">
+                    <h3>Kids' Shirt</h3>
+                    <p>₹1,200</p>
+                    <button onclick="addToCart('Kids\' Shirt', 1200)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/kids2.jpg" alt="Kids' Shoes">
+                    <h3>Kids' Shoes</h3>
+                    <p>₹2,800</p>
+                    <button onclick="addToCart('Kids\' Shoes', 2800)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

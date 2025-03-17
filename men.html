@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Wear - E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Men's Wear</h1>
+        <div class="cart" onclick="viewCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">Women's Wear</a></li>
+            <li><a href="kids.html">Kids' Wear</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="mens">
+            <h2>Men's Wear</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/mens1.jpg" alt="Men's T-Shirt">
+                    <h3>Men's T-Shirt</h3>
+                    <p>₹1,600</p>
+                    <button onclick="addToCart('Men\'s T-Shirt', 1600)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/mens2.jpg" alt="Men's Jacket">
+                    <h3>Men's Jacket</h3>
+                    <p>₹4,000</p>
+                    <button onclick="addToCart('Men\'s Jacket', 4000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/mens3.jpg" alt="Men's Jeans">
+                    <h3>Men's Jeans</h3>
+                    <p>₹3,000</p>
+                    <button onclick="addToCart('Men\'s Jeans', 3000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                   
+                    <img src="images/mens4.jpg" alt="Men's Shirt" >
+                    <h3>Men's Shirt</h3>
+                    <p>₹4,000</p>
+                    <button onclick="addToCart('Men\'s Shirt', 4000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/mens5.webp" alt="Men's Sheos">
+                    <h3>Men's Sheos</h3>
+                    <p>₹5,000</p>
+                    <button onclick="addToCart('Men\'s Jeans', 3000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                   
+                    <img src="images/mens6.webp" alt="Men's Sheos" >
+                    <h3>Men's Sheos</h3>
+                    <p>₹5,000</p>
+                    <button onclick="addToCart('Men\'s Shirt', 5000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                   
+                    <img src="images/mens7.webp" alt="Men's Sheos" >
+                    <h3>Men's Sheos</h3>
+                    <p>₹4,000</p>
+                    <button onclick="addToCart('Men\'s Shirt', 4000)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids' Wear - E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kids' Wear</h1>
+        <div class="cart" onclick="viewCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men's Wear</a></li>
+            <li><a href="women.html">Women's Wear</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="kids">
+            <h2>Kid's Wear</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/kids1.jpg" alt="Kids' Shirt">
+                    <h3>Kid's Shirt</h3>
+                    <p>₹999</p>
+                    <button onclick="addToCart('Kids\' Shirt', 999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/kids2.jpg" alt="Kids' Shoes">
+                    <h3>Kid's Shoes</h3>
+                    <p>₹899</p>
+                    <button onclick="addToCart('Kids\' Shoes', 899)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/kids3.jpeg" alt="Kids' Shirt">
+                    <h3>Kid's Shirt</h3>
+                    <p>₹699</p>
+                    <button onclick="addToCart('Kids\' Shirt', 699)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/kids4.jpeg" alt="Kids' Jeans">
+                    <h3>Kid's Jeans</h3>
+                    <p>₹999</p>
+                    <button onclick="addToCart('Kids\' Shoes', 999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/kids5.webp" alt="Kids' Dress">
+                    <h3>Kid's Dress</h3>
+                    <p>₹999</p>
+                    <button onclick="addToCart('Kids\' Shoes', 999)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
